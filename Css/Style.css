@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* 
+globalt för all contant på hemsidan. overflow hidden är tillagt så
+element som kommer utanför dessa "boxar" försvinner */
+.container{
+
+width:80%;
+margin:auto;
+overflow:hidden;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+
+.pink{
+    padding: 15px;
+    background:#d2b5e2 ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* headern */
+
+header{
+background-color: #d2b5e2;
+padding-top: 30px;
+min-height: 70px;
+border-bottom: #793698 3px solid;
+}
+
+/* 
+navigationslänkarna uppe i headern */
+
+header a{
+text-decoration: none;
+font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+
+header #branding{
+    float: left;
+    width: 100%;
+}
+
+header #branding h1{
+
+    margin:0;
+}
+
+header nav{
+    margin-top: 10px;
+    float: right;
+}
+
+header a:hover{
+color:#793698;
+font-weight: bold;
+
+}
+
+#showcase{
+    min-height: 400px;
+    background:url('../img/Showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color:#ffffff;
+}
+
+#showcase h1{
+
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+
+    font-size: 20px;
+}
+
+#newsletter{
+
+    padding: 15px;
+    background-color:#793698;
+    
+}
+ 
+
+/* här börjar formgivning av "boxarna" */
+#boxes .box img{
+
+    width: 90px;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* slut för boxarna*/
+
+
+/* sidebaren */
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+/* main-col */
+
+article#main-col{
+    float: left;
+    width: 65%;
+   
+}
+
+/* services */
+
+ul#services li{
+list-style: none;
+padding: 20px;
+border: #793698 5px;
+margin-bottom: 5px;
+background: #d2b5e2;
+
+
+}
+
+
+
+/* kod för kontaktsidan */
+
+#SocialMedia .Smedia img{
+
+    width: 90px;
+}
+
+#SocialMedia{
+    margin-top: 20px;
+}
+
+#SocialMedia .Smedia{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#FindUs{
+
+    text-align: center;
+}
+
+/* kod för bloggsidan */
+
+#BloggPost .BloggElements img{
+
+    width: 300px;
+}
+
+
+/* footer */
+
+footer{
+
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #d2b5e2;
+    text-align: center;
+}
+
+
+/* media queries */
+
+@media(max-width: 760px){
+
+header #branding,
+header nav, header nav li,
+#newsletter h1, #newsletter form, #boxes .box, 
+#SocialMedia .Smedia,
+article#main-col, aside#sidebar {
+    float:none;
+    text-align: center;
+    width: 100%;
+}
+
+header{
+    padding-bottom: 20px;
+}
+
+#showcase h1{
+    margin-top: 40px;
+}
+
+#newsletter button{
+    display:block;
+    width: 100%;
+}
+
+#newsletter form input[type="email"]{
+    width:100%;
+    margin-bottom: 5px;
+
+}
+
+
+@media(max-width:375px){
+
+
+    #showcase h1{
+
+  
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    #showcase p{
+    
+        font-size: 20px;
+    }
+    
+    
+#BloggPost .BloggElements img{
+
+    width: 250px;
+}
+
+#BloggPost .BloggElements{
+
+    text-align: center;
+}
+}
+
+
+}

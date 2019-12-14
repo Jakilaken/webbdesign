@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jakob WebbDesign | Welcome</title>
     <link rel="stylesheet" href="./Css/Style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,8 +15,11 @@
                 <h1>Jakob WebbDesign</h1>
             </div>
             <nav>
+                <div class = toggle>
+                    <i class="fa fa-bars menu" aria-hidden="true"></i>
+                </div>
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class = "current"><a href="index.html">Home</a></li>
                     <li><a href="./pages/About.html">About</a></li>
                     <li><a href="./pages/Service.html">Services</a></li>
                     <li><a href="./pages/Contact.Html">Contact</a></li>
@@ -23,8 +27,17 @@
                     
                 </ul>
             </nav>
+            <script>
+                let menu = document.querySelector('.menu')
+                menu.addEventListener('click', (e) => {
+                  document.querySelector('ul').classList.toggle('active');
+                })
+              </script>
         </div>
     </header>
+
+
+
 
     <section id="showcase">
         <div class="container">
@@ -39,7 +52,7 @@
 
     <section id="newsletter">
         <div class="container">
-            <h1>Subscribe for newsletter</h1>
+            <h1 id ="vittext">Subscribe for newsletter</h1>
             <form>
                 <input type="Email" placeholder="Enter Email..">
                 <button type="submit" class="button_1">Subscribe</button>

@@ -22,7 +22,7 @@ ul{
 
 .pink{
     padding: 15px;
-    background:#d2b5e2 ;
+    background:#E3CFEC ;
     margin-top: 10px;
     margin-bottom: 10px;
 
@@ -31,10 +31,22 @@ ul{
 /* headern */
 
 header{
-background-color: #d2b5e2;
+background-color: #E3CFEC;
 padding-top: 30px;
 min-height: 70px;
-border-bottom: #793698 3px solid;
+border-bottom: #5A2871 5px solid;
+}
+
+.toggle{
+
+    width: 100%;
+    padding-bottom: 5px;
+    background:#E3CFEC;
+    text-align: left;
+    box-sizing: border-box;
+    color: #5A2871 ;
+    font-size: 30px;
+    display:none; 
 }
 
 /* 
@@ -68,7 +80,7 @@ header nav{
 }
 
 header a:hover{
-color:#793698;
+color:#5A2871;
 font-weight: bold;
 
 }
@@ -95,10 +107,14 @@ font-weight: bold;
 #newsletter{
 
     padding: 15px;
-    background-color:#793698;
+    background-color:#5A2871;
     
 }
  
+#vittext{
+
+    color:#ffffff
+}
 
 /* här börjar formgivning av "boxarna" */
 #boxes .box img{
@@ -142,10 +158,10 @@ article#main-col{
 ul#services li{
 list-style: none;
 padding: 20px;
-border: #793698 5px;
+border: #5A2871 5px;
 margin-bottom: 5px;
-background: #d2b5e2;
-
+background: #E3CFEC;
+font-size: 15px;
 
 }
 
@@ -179,6 +195,7 @@ background: #d2b5e2;
 #BloggPost .BloggElements img{
 
     width: 300px;
+    text-align: left;
 }
 
 
@@ -188,7 +205,7 @@ footer{
 
     padding: 20px;
     margin-top: 20px;
-    background-color: #d2b5e2;
+    background-color: #E3CFEC;
     text-align: center;
 }
 
@@ -197,35 +214,73 @@ footer{
 
 @media(max-width: 760px){
 
-header #branding,
-header nav, header nav li,
-#newsletter h1, #newsletter form, #boxes .box, 
-#SocialMedia .Smedia,
-article#main-col, aside#sidebar {
-    float:none;
-    text-align: center;
-    width: 100%;
+    header #branding,
+    header nav, header nav li,
+    #newsletter h1, #newsletter form, #boxes .box, 
+    #SocialMedia .Smedia,
+    article#main-col, aside#sidebar {
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    header a{
+
+        font-size: 25px;
+        
+        
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button{
+        display:block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width:100%;
+        margin-bottom: 5px;
+
+    }
+
+    .toggle{
+        display:block;
+       
+
+    }
+
+    ul{
+        width:100%;
+        display: none;
+    }
+
+    #services{
+
+        display: block;
+    }
+
+    ul li{
+
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 30px;
+    }
+
+    .active{
+        display: block;
+        
+    }
+
+ 
 }
-
-header{
-    padding-bottom: 20px;
-}
-
-#showcase h1{
-    margin-top: 40px;
-}
-
-#newsletter button{
-    display:block;
-    width: 100%;
-}
-
-#newsletter form input[type="email"]{
-    width:100%;
-    margin-bottom: 5px;
-
-}
-
 
 @media(max-width:375px){
 
@@ -242,17 +297,16 @@ header{
         font-size: 20px;
     }
     
-    
-#BloggPost .BloggElements img{
+        
+    #BloggPost .BloggElements img{
 
-    width: 250px;
+        width: 250px;
+    }
+
+    #BloggPost .BloggElements{
+
+        text-align: center;
+    }
 }
 
-#BloggPost .BloggElements{
 
-    text-align: center;
-}
-}
-
-
-}

@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jakob WebbDesign | Contact </title>
+    <title>Jakob WebbDesign | Blogg </title>
     <link rel="stylesheet" href="../Css/Style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
             <div id="branding">
-                <h1>Jakob WebbDesign</h1>
+                <h1 aria-label="logotype">Jakob WebbDesign</h1>
             </div>
             <nav>
-                <div class = toggle>
-                <i class="fa fa-bars menu" aria-hidden="true"></i>
-            </div>
+                <div aria-label="Menu" class = toggle>
+                    <button class="fa fa-bars menu"></button>
+                </div>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./About.html">About</a></li>
@@ -26,7 +27,7 @@
                     <li class="current" ><a href="./Blogg.html">Blogg</a></li>
                 </ul>
             </nav>
-            <script>
+            <script aria-hidden="true">
                 let menu = document.querySelector('.menu')
                 menu.addEventListener('click', (e) => {
                   document.querySelector('ul').classList.toggle('active');
@@ -39,8 +40,8 @@
 
 
     <section id="newsletter">
-        <div class="container">
-            <h1  id ="vittext">Subscribe for newsletter</h1>
+        <div aria-label="Subscribtion for newsletter"  class="container">
+            <h1 id="vittext">Subscribe for newsletter</h1>
             <form>
                 <input type="Email" placeholder="Enter Email..">
                 <button type="submit" class="button_1">Subscribe</button>
@@ -50,13 +51,13 @@
 
 
     <section id="BloggPost">
-        <div class="container">
+        <div aria-label="a word form the owner" class="container">
             <div class="OwnerWord">
                 <h1>A Word from our owner<br><br><br>
              </h1>
              </div>
             <div class="BloggElements">
-                  <img src ="../img/mrbanan.jpg" alt="BloggPic">
+                  <img aria-label="Picture of the owner" src ="../img/mrbanan.jpg" alt="BloggPic">
                 <h3>My vision for the future</h3>
                 <p>Donec aliquet sollicitudin augue, cursus facilisis lorem porta vitae. Maecenas vulputate justo quis turpis luctus imperdiet. Suspendisse vehicula iaculis eleifend. Pellentesque interdum id ligula eu tristique. Praesent et feugiat lacus. Integer quis convallis nulla, eget scelerisque magna. Nullam lacinia tristique risus, quis convallis est elementum eget. Suspendisse at arcu leo. Etiam congue nunc velit, ac mattis orci finibus sit amet. Etiam sollicitudin felis in arcu sollicitudin iaculis..    
                 </p>

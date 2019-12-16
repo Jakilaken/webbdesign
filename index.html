@@ -12,11 +12,11 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1>Jakob WebbDesign</h1>
+                <h1 aria-label="logotype">Jakob WebbDesign</h1>
             </div>
             <nav>
-                <div class = toggle>
-                    <i class="fa fa-bars menu" aria-hidden="true"></i>
+                <div aria-label="Menu"  class = toggle>
+                    <button aria-label="Menu" class="fa fa-bars menu"></button>
                 </div>
                 <ul>
                     <li class = "current"><a href="index.html">Home</a></li>
@@ -27,7 +27,7 @@
                     
                 </ul>
             </nav>
-            <script>
+            <script aria-hidden="true">
                 let menu = document.querySelector('.menu')
                 menu.addEventListener('click', (e) => {
                   document.querySelector('ul').classList.toggle('active');
@@ -40,40 +40,40 @@
 
 
     <section id="showcase">
-        <div class="container">
+        <div aria-label="Webbsite information" class="container">
             <div class="vinter">
             <h1>Proffessional Web Design For You!</h1>
             <p>
                 Ut non hendrerit sem. Integer interdum tincidunt felis, vel molestie arcu dignissim vel. Etiam at gravida dolor, sit amet scelerisque elit. Mauris sollicitudin augue non gravida aliquet.
             </p>
-        </div>
+            </div>
         </div>
     </section>
 
     <section id="newsletter">
         <div class="container">
-            <h1 id ="vittext">Subscribe for newsletter</h1>
-            <form>
-                <input type="Email" placeholder="Enter Email..">
-                <button type="submit" class="button_1">Subscribe</button>
+            <h1 aria-label="Subscribtion for newsletter" id ="vittext">Subscribe for newsletter</h1>
+            <form aria-label="Enter your email adress and subscribe">
+                <input aria-label="Enter Email for Subscribtion" type="Email" placeholder="Enter Email..">
+                <button aria-label="after entering your email adress above, press this button to subscribe" type="submit" class="button_1">Subscribe</button>
             </form>
         </div>
     </section>
 
-    <section id="boxes">
+    <section aria-label="Information about HTML, CSS and graphic design" id="boxes">
         <div class="container">
             <div class="box">
-                <img src="./img/håtml.png" alt="förstabox">
+                <img aria-label="Logotype for HTML" src="./img/håtml.png" alt="förstabox">
                 <h3>HTML 5</h3>
                 <p>Quisque lobortis eget mi vitae luctus. Curabitur maximus erat ac massa tincidunt semper.</p>
             </div>
             <div class="box">
-                <img src ="./img/CSS.png" alt="andrabox">
+                <img aria-label="Logotype for CSS" src ="./img/CSS.png" alt="andrabox">
                 <h3>CSS</h3>
                 <p>Quisque lobortis eget mi vitae luctus. Curabitur maximus erat ac massa tincidunt semper.</p>
             </div>
             <div class="box">
-                <img src ="./img/penna.jpg" alt="tredjebox">
+                <img aria-label="Logotype for Graphic Design" src ="./img/penna.jpg" alt="tredjebox">
                 <h3>Graphic Design</h3>
                 <p>Quisque lobortis eget mi vitae luctus. Curabitur maximus erat ac massa tincidunt semper.</p>
             </div>
